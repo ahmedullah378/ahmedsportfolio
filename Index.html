@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Ullah | The Operator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --gold: #C5A059;
+            --bg-color: #0F161E; /* Matches the dark navy/black on the card */
+            --card-bg: #161D26;
+            --text-main: #FFFFFF;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: var(--card-bg);
+            width: 100%;
+            max-width: 380px;
+            border: 1px solid #2A3441;
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* The Gold Border Accent from your card */
+        .profile-card::before {
+            content: "";
+            position: absolute;
+            top: 10px; left: 10px; right: 10px; bottom: 10px;
+            border: 1px solid var(--gold);
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            letter-spacing: 1px;
+            color: var(--text-main);
+        }
+
+        .title {
+            color: var(--gold);
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin: 10px 0 30px 0;
+            display: block;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            text-decoration: none;
+            color: var(--text-main);
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .social-link i {
+            font-size: 1.2rem;
+            width: 30px;
+            margin-right: 15px;
+        }
+
+        .social-link:hover {
+            background: var(--gold);
+            color: var(--bg-color);
+            transform: translateY(-2px);
+        }
+
+        .whatsapp {
+            border-color: #25D366;
+            color: #25D366;
+        }
+
+        .whatsapp:hover {
+            background: #25D366;
+            color: white;
+            border-color: #25D366;
+        }
+
+        .footer-text {
+            margin-top: 30px;
+            font-size: 0.7rem;
+            color: var(--gold);
+            letter-spacing: 2px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <h1>Ahmed Ullah</h1>
+        <span class="title">THE OPERATOR</span>
+
+        <div class="links-container">
+            <a href="https://facebook.com/Ahmedullah3778" class="social-link">
+                <i class="fab fa-facebook-f" style="color: #1877F2;"></i> Facebook
+            </a>
+            <a href="https://instagram.com/highlypraised_78" class="social-link">
+                <i class="fab fa-instagram" style="color: #E4405F;"></i> Instagram
+            </a>
+            <a href="https://tiktok.com/@ahmed_ullah.78" class="social-link">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+            <a href="https://wa.me/880XXXXXXXXXX" class="social-link whatsapp">
+                <i class="fab fa-whatsapp"></i> Tap to Chat
+            </a>
+        </div>
+
+        <div class="footer-text">SCAN TO CONNECT</div>
+    </div>
+
+</body>
+</html>
